@@ -1254,7 +1254,7 @@
     top: 1px; }
 
 .btn-primary {
-  background-color: #378C3F;
+  background-color: #5F8063;
   color: #FFFFFF; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover,
   .show > .btn-primary.dropdown-toggle,
@@ -2598,7 +2598,7 @@ body {
   background-color: #888 !important; }
 
 .bg-primary {
-  background-color: #378C3F !important; }
+  background-color: #5F8063 !important; }
 
 .bg-info {
   background-color: #2CA8FF !important; }
@@ -5205,10 +5205,13 @@ Created using IcoMoon - icomoon.io
 
 /* Experience Style */
 .cc-experience .cc-experience-header {
-  padding-top: 60px;
-  padding-right: 0;
+  color: #FFFFFF;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #fff;
   text-transform: uppercase; }
 
 /* Education Style */
@@ -5331,4 +5334,172 @@ a.credit {
     border-radius: 15px;
     font-size: 13px;
     background: #f8f8f8;
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+.theme-toggle {
+    background: transparent;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #fff;
+    width: 60px;
+    height: 42px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.theme-toggle:focus,
+.theme-toggle:focus-visible {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.theme-toggle:active {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(0.96);
+}
+
+.dark-mode {
+    background-color: #121614 !important;
+    color: #E8ECE9 !important;
+}
+
+/* Main page sections */
+.dark-mode body,
+body.dark-mode {
+    background-color: #121614 !important;
+    color: #E8ECE9 !important;
+}
+
+.dark-mode .section,
+.dark-mode section {
+    background-color: #121614 !important;
+}
+
+/* Cards */
+.dark-mode .card,
+.dark-mode .card-body {
+    background-color: #1B211D !important;
+    color: #E8ECE9 !important;
+}
+
+/* Text */
+.dark-mode p,
+.dark-mode li,
+.dark-mode span,
+.dark-mode label {
+    color: #B9C2BC;
+}
+
+.dark-mode .title,
+.dark-mode .h4,
+.dark-mode .h5,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+    color: #E8ECE9;
+}
+
+/* Links */
+.dark-mode a {
+    color: #7FA686;
+}
+
+/* Skill tags */
+.dark-mode .skill-tag {
+    background-color: #242B26 !important;
+    border-color: #39443B !important;
+    color: #C9D2CC !important;
+}
+
+/* White backgrounds */
+.dark-mode .bg-white,
+.dark-mode [style*="background-color: white"],
+.dark-mode [style*="background-color:#fff"],
+.dark-mode [style*="background-color: #fff"] {
+    background-color: #121614 !important;
+}
+
+/* Inputs */
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+    background-color: #1B211D !important;
+    color: #E8ECE9 !important;
+    border-color: #39443B !important;
+}
+
+/* Borders */
+.dark-mode .card,
+.dark-mode .skill-tag,
+.dark-mode hr {
+    border-color: #39443B !important;
+}
+
+/* Navbar */
+.dark-mode .navbar {
+    background-color: #26382A !important;
+}
+
+/* Primary green areas */
+.dark-mode .bg-primary {
+    background-color: #4F6D53 !important;
+}
+
+/* Keep text white on green headers */
+.dark-mode .cc-experience-header,
+.dark-mode .cc-education-header {
+    color: #FFFFFF !important;
+}
+
+.dark-mode .cc-experience-header *,
+.dark-mode .cc-education-header * {
+    color: #FFFFFF !important;
+}
+
+.dark-mode .cc-experience .bg-primary {
+    background-color: #4F6D53 !important;
+}
+
+.dark-mode .cc-experience .cc-experience-header {
+    background-color: #4F6D53 !important;
+    color: #FFFFFF !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.dark-mode .btn-primary {
+    color: #FFFFFF !important;
+}
+
+.dark-mode .btn-primary i,
+.dark-mode .btn-primary span {
+    color: #FFFFFF !important;
+}
+.dark-mode .navbar.navbar-transparent {
+    background-color: transparent !important;
+}
+
+/* Dark mode: green only after color-on-scroll kicks in */
+.dark-mode .navbar:not(.navbar-transparent) {
+    background-color: #5F8063 !important;
 }
